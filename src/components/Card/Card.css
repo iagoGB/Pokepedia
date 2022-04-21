@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 .Card {
     height: 300px;
     width: 300px;
@@ -7,8 +12,12 @@
     box-shadow: 4px 4px 4px 4px  black;
 }
 
+body {
+    font-family: 'Akshar', sans-serif;
+}
+
+
 div .Card-Header {
-    background-color: yellow;
     height: 50%;
     border-radius: 10px;
     position: relative;
@@ -43,8 +52,116 @@ div .Card-Header {
 .Card-Information {
     height: 100%;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.Card-Types {
+    display: flex;
     justify-content: center;
+    color: white;
+}
+.Card-Types div {
+    padding: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.Card-Detail {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    border-top: 1px solid grey;
+}
+
+.Card-Description {
+    flex-direction: column;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-right: 1px solid grey;
+    color: grey;
+}
+
+.Card-Description:last-child {
+    border: none;
+}
+
+.fighting {
+    background-color: #C03028;
+}
+
+.poison {
+    background-color: #A040A0;
+}
+
+.electric {
+    background-color: #F8D030;
+}
+
+.fire {
+    background-color: #F08030;
+}
+
+.normal {
+    background-color: #A8A878;
+}
+
+.rock {
+    background-color: #B8A038;
+}
+
+.ground {
+    background-color:#E0C068;
+}
+
+.ice {
+    background-color: #98D8D8;
+}
+
+.bug {
+    background-color: #A8B820;
+}
+
+.dragon {
+    background-color: #7038F8;
+}
+
+.ghost {
+    background-color: #705898;
+}
+
+.dark {
+    background-color: #705848;
+}
+
+.steel {
+    background-color: #B8B8D0;
+}
+
+.fairy {
+    background-color: #EE99AC;
+}
+
+.water {
+    background-color: #6890F0;
+}
+
+.psychic {
+    background-color: #F85888;
+}
+
+.flying {
+    background-color:  #A890F0;
+}
+.grass {
+    background-color:  #78C850;
 }
 
 .grid {
